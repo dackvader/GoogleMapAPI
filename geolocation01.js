@@ -27,7 +27,7 @@ function initMap() {
           };
 
           infoWindow.setPosition(pos);
-          infoWindow.setContent("Location found.");
+          infoWindow.setContent("จุดเกิดอุบัติเหตุ");
           infoWindow.open(map);
           map.setCenter(pos);
         },
