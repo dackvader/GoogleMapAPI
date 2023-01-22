@@ -7,7 +7,7 @@ let map, infoWindow;
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 13.75316, lng: 100.49314 },
-    zoom: 10,
+    zoom: 15,
   });
   infoWindow = new google.maps.InfoWindow();
 
@@ -27,7 +27,7 @@ function initMap() {
           };
 
           infoWindow.setPosition(pos);
-          infoWindow.setContent("จุดเกิดอุบัติเหตุ");
+          infoWindow.setContent("จุดเกิดเหตุ");
           infoWindow.open(map);
           map.setCenter(pos);
         },
