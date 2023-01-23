@@ -6,8 +6,8 @@ let response;
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 8,
-    center: { lat: 18.79553, lng: 98.98394 },
+    zoom: 15,
+    center: { lat: 13.79553, lng: 100.58394 },
     mapTypeControl: false,
   });
   geocoder = new google.maps.Geocoder();
@@ -48,6 +48,7 @@ function initMap() {
   marker = new google.maps.Marker({
     map,
   });
+  
   map.addListener("click", (e) => {
     geocode({ location: e.latLng });
   });
@@ -58,6 +59,7 @@ function initMap() {
     clear();
   });
   clear();
+  
 }
 
 function clear() {
@@ -66,7 +68,7 @@ function clear() {
 }
 
 function geocode(request) {
-  clear();
+ clear();
   geocoder
     .geocode(request)
     .then((result) => {

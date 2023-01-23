@@ -60,7 +60,7 @@
   input[type=button].button-secondary:hover {
     background-color: #d2e3fc;
   }
-  
+  /*
   #response-container {
     background-color: #fff;
     border: 0;
@@ -76,7 +76,7 @@
     background-color: rgba(255, 255, 255, 0.95);
     font-size: small;
   }
-  
+  */
   #instructions {
     background-color: #fff;
     border: 0;
